@@ -23,6 +23,31 @@ function producto_1() {
 
     }
 }
+function producto_2() {
+    var peticion = null;
+
+    peticion = new XMLHttpRequest();
+    console.log(peticion);
+    if (peticion) {
+        peticion.open('get', "producto_2.html", false); //metodo , el archivo que voy a traer , si lo quiero sincrono = falso
+        peticion.send(null);
+        document.getElementById("contenedor_menor").innerHTML = peticion.responseText;
+
+    }
+}
+
+function producto_3() {
+    var peticion = null;
+
+    peticion = new XMLHttpRequest();
+    console.log(peticion);
+    if (peticion) {
+        peticion.open('get', "producto_3.html", false); //metodo , el archivo que voy a traer , si lo quiero sincrono = falso
+        peticion.send(null);
+        document.getElementById("contenedor_menor").innerHTML = peticion.responseText;
+
+    }
+}
 
 
 function contacto() {
