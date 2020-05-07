@@ -4,12 +4,20 @@
     width: auto;
 
 }
-
 .container {
     padding-top: 15px;
+}
+
+.lista{
+    padding-bottom: 25px;
 }
 
 .img-product{
     height: 343px;
     width: 343px;
+    border-radius: 10px;
+}
+
+.footer-separacion{
+    padding-top: 25px;
 }

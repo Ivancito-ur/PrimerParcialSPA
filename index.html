@@ -41,6 +41,18 @@ function registro() {
 
             }
         }
+function producto_1() {
+            var peticion = null;
+
+            peticion = new XMLHttpRequest();
+            console.log(peticion);
+            if (peticion) {
+                peticion.open('get', "producto_1.html", false); //metodo , el archivo que voy a traer , si lo quiero sincrono = falso
+                peticion.send(null);
+                document.getElementById("contenedor_menor").innerHTML = peticion.responseText;
+
+            }
+        }
     </script>
 
     <!-- Image and text -->
@@ -90,13 +102,13 @@ function registro() {
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100 " src="https://1685481792.rsc.cdn77.org/wp-content/uploads/2016/08/cliente-sal%C3%B3n-de-belleza.jpg" alt="First slide">
+            <img class="d-block w-100 img-slider" src="https://1685481792.rsc.cdn77.org/wp-content/uploads/2016/08/cliente-sal%C3%B3n-de-belleza.jpg" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100 " src="https://spalopiabusiness.com/wp-content/uploads/2017/05/masaje-pareja-spa.jpg" alt="Second slide">
+            <img class="d-block w-100 img-slider" src="https://spalopiabusiness.com/wp-content/uploads/2017/05/masaje-pareja-spa.jpg" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100 " src="https://www.cerodosbe.com/uploads/s1/54/20/17/4/etihad-spa.jpeg" alt="Second slide">
+            <img class="d-block w-100 img-slider" src="https://www.cerodosbe.com/uploads/s1/54/20/17/4/etihad-spa.jpeg" alt="Second slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -112,18 +124,19 @@ function registro() {
   <div class="container" id="contenedor_menor">
     <div class="card-deck">
         <div class="card ">
-          <img src="https://cdnx.jumpseller.com/toniytanacom/image/4114911/resize/540/540?1588160766" class="card-img-top img-product" alt="xxx">
+          <img src="https://cdnx.jumpseller.com/toniytanacom/image/4114911/resize/540/540?1588160766" class="card-img-top" alt="xxx">
           <div class="card-body">
             <h5 class="card-title">Desayuno Sorpresa</h5>
             <p class="card-text">Espectacular detalle desde: $24,900 </p>
-            <a href="#" class="btn btn-primary" >Añadir al carro </a>
+            <a href="#" class="btn btn-primary" onclick="producto_1()">Añadir al carro </a>
+
           </div>
           <div class="card-footer">
             <small class="text-muted">Last updated 3 mins ago</small>
           </div>
         </div>
         <div class="card">
-          <img src="https://flormiel.com/floristeria/wp-content/uploads/2019/04/Desayuno-Sorpresa-Te-Amo-Como-Nunca-4-1.jpg" class="card-img-top img-product" alt="...">
+          <img src="https://flormiel.com/floristeria/wp-content/uploads/2019/04/Desayuno-Sorpresa-Te-Amo-Como-Nunca-4-1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Desayuno mega Sorpresa</h5>
             <p class="card-text">Delicios y extravagante desayuno sorpresa desde: $49,900</p>
@@ -134,7 +147,7 @@ function registro() {
           </div>
         </div>
         <div class="card">
-          <img src="https://http2.mlstatic.com/desayuno-sorpresa-D_NQ_NP_804661-MCO29526625471_022019-F.webp" class="card-img-top img-product" alt="...">
+          <img src="https://http2.mlstatic.com/desayuno-sorpresa-D_NQ_NP_804661-MCO29526625471_022019-F.webp" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Canasta Sopresa FIT</h5>
             <p class="card-text">Regala una canasta con los mejores alimentos sanos, desde $15,900</p>
@@ -148,7 +161,7 @@ function registro() {
       </div>
   </div>
 </div>
-  <footer class="card-footer">
+  <footer class="card-footer footer-separacion">
     <p style="color: rgb(0, 0, 0);"> SPA - Todos los derechos reservados® 2020</p>
   </footer>
 
